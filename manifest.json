@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Chat Presets",
+  "version": "1.5.1103.26",
+  "version_name": "1.5.11-3-26",
+  "description": "One-click preset chat messages with a username placeholder ([x]) and member emotes.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/live_chat*",
+        "https://www.youtube.com/live_chat_replay*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
